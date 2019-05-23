@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://thymeleaf.org">
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -14,16 +14,15 @@
         <td>Actions</td>
 
     </tr>
-    <tr th:each="course : ${courses}">
+    <tr th:each="cour se : ${courses}">
         <td th:text="${course.title}"></td>
         <td th:text="${course.instructor}"></td>
-        <td>
-            <a th:href="@{/update/{id}(id=${course.id})}">Update</a>
-            <a th:href="@{/update/{id}(id=${course.id})}">Details</a>
+        <td th:text="${course.credit}"></td>
+        <td>m
+            <a th:href="@{/update/{id}(id=${course.id})}">Update</a> -
+            <a th:href="@{/update/{id}(id=${course.id})}">Details</a> -
             <a th:href="@{/update/{id}(id=${course.id})}">Delete</a>
-        </td>
-
-    </tr>
+        </td></tr>
 </table>
 </body>
 </html>
